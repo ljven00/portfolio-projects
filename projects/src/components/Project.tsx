@@ -1,27 +1,42 @@
+import { useState } from "react";
 import "../Project.scss";
-import Popup from "./Popup.tsx";
+import {Data} from "../App";
 
-interface Props {
-    url: string;
-    title: string;
-    preview: boolean;
-}
-
-export default function Project({url, title, preview} : Props) {
-
+export default function Project({imgUrl, title, preview, previewUrl,sourceCodeUrl, description} : Data) {
+    // const [toggle, setToggle] = useState(false);
+    // function handleToggle(){
+    //     if(toggle)
+    //         setToggle(false);
+    //     else
+    //         setToggle(true);
+    // }
     return (
         <section className="card">
             <figure className="img-container">
-                <img src={url} alt="Project thumbnail" />
+                <img src={imgUrl} alt="Project thumbnail" />
                 <figcaption>{title}</figcaption>
             </figure>
-            <div className="btn-container">
-                <a className="link source">Source Code</a>
-                { preview && <a className="link preview">Live Preview</a>}
-                <button className="btn desc" onClick={() => {
-                return <Popup />}
-                }>Description</button>
+            <div className="link-container">
+                <a 
+                    className="link source"
+                    href={sourceCodeUrl}
+                ><i className="fa-brands fa-github"></i> Code</a>
+                { 
+                    preview && 
+                    <a 
+                        className="link preview"
+                        href={previewUrl}
+                    ><i className="fa-solid fa-globe"></i> Preview</a>
+                }
+                {/* <button 
+                    className="btn desc" 
+                    onClick={handleToggle}
+                >Description</button> */}
             </div>
+            {
+                // toggle &&
+                // <p>{description}</p>
+            }
         </section>
     )
 }
