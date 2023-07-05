@@ -1,15 +1,7 @@
-import { useState } from "react";
 import "../Project.scss";
 import {Data} from "../App";
 
-export default function Project({imgUrl, title, preview, previewUrl,sourceCodeUrl, description} : Data) {
-    // const [toggle, setToggle] = useState(false);
-    // function handleToggle(){
-    //     if(toggle)
-    //         setToggle(false);
-    //     else
-    //         setToggle(true);
-    // }
+export default function Project({imgUrl, title, preview, previewUrl,sourceCodeUrl} : Data) {
     return (
         <section className="card">
             <figure className="img-container">
@@ -28,15 +20,7 @@ export default function Project({imgUrl, title, preview, previewUrl,sourceCodeUr
                         href={previewUrl}
                     ><i className="fa-solid fa-globe"></i> Preview</a>
                 }
-                {/* <button 
-                    className="btn desc" 
-                    onClick={handleToggle}
-                >Description</button> */}
             </div>
-            {
-                // toggle &&
-                // <p>{description}</p>
-            }
         </section>
     )
 }

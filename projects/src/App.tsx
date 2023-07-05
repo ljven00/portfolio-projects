@@ -10,7 +10,6 @@ interface Data {
   preview: boolean;
   previewUrl: string,
   sourceCodeUrl: string,
-  description: string
 }
 
 const projects: Data[] = [
@@ -19,32 +18,28 @@ const projects: Data[] = [
     title: "Etch a Sketch",
     preview: true,
     previewUrl: "http://ljven-etch-a-sketch.netlify.app/",
-    sourceCodeUrl: "https://github.com/ljven00/OdinProject/tree/main/etch-a-sketch",
-    description: "Are you okay"
+    sourceCodeUrl: "https://github.com/ljven00/OdinProject/tree/main/etch-a-sketch"
   },
   {
     imgUrl: "https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_1280.jpg",
     title: "Fruits Count",
     preview: true,
     previewUrl: "",
-    sourceCodeUrl: "",
-    description: "Hello Dear"
+    sourceCodeUrl: ""
   },
   {
     imgUrl: passGen,
     title: "Password Generator",
     preview: true,
     previewUrl: "https://ljven-password-generator.netlify.app/",
-    sourceCodeUrl: "https://github.com/ljven00/ScrimbaProjects/tree/main/PasswordGenerator",
-    description: "This is Jean"
+    sourceCodeUrl: "https://github.com/ljven00/ScrimbaProjects/tree/main/PasswordGenerator"
   },
   {
     imgUrl: fruitShelf,
     title: "Fruits Shelf",
     preview: true,
     previewUrl: "",
-    sourceCodeUrl: "",
-    description: "Are you okay"
+    sourceCodeUrl: ""
   }
 ]
 
@@ -59,7 +54,6 @@ function App() {
           preview = {value.preview}
           previewUrl = {value.previewUrl}
           sourceCodeUrl = {value.sourceCodeUrl}
-          description = {value.description}
         />)
       }
     </main>
