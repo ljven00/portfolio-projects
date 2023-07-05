@@ -1,5 +1,5 @@
 import Project from "./components/Project";
-import "./App.scss";
+import "./index.scss";
 import fruitShelf from "./assets/fruit-shelf.png";
 import passGen from "./assets/pass-gen.png";
 import sketch from "./assets/sketch.png";
@@ -66,4 +66,5 @@ function App() {
   )
 }
 
-export default App
+export default App;
+export type { Data };
