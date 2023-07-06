@@ -7,7 +7,6 @@ interface Props {
     updateShelf: any
 }
 
-
 export default function Shelf({name, icon, updateShelf}: Props) {
     const [quantity, setQuantity] = useState(0);
     const [iconQty, setIconQty] = useState([""]);
@@ -38,8 +37,7 @@ export default function Shelf({name, icon, updateShelf}: Props) {
         setQuantity(0);
         setIconQty([""]);
     }
-
-
+    
     return(
         <div className="shelf">
             <div className="name-container">

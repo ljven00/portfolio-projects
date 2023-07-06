@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.scss';
 import Shelf from './components/Shelf';
 import NewShelf from './components/NewShelf';
 
@@ -129,10 +128,8 @@ const vegetables = [
   }
 ];
 
-
 function App() {
   const [content, setContent] = useState([]);
-  // const [product, setProduct] = useState("");
   return (
     <main id='main'>
       {
@@ -153,4 +150,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
