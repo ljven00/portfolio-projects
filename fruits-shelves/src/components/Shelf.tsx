@@ -28,6 +28,7 @@ export default function Shelf({name, icon, updateShelf}: Props) {
     }
 
     /** removes the last element of an array */
+    // @ts-ignore ts2304
     function filtering(value: any, index: number, array: string[]){
         return index < array.length - 1;
     }

@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Shelf from './Shelf';
 
 interface Data {
     name: string,
@@ -10,7 +8,6 @@ interface Props {
     fruits: Data[],
     vegetables: Data[],
     updateShelf: any,
-    // updateProduct: any
 }
 
 export default function NewShelf({fruits, vegetables, updateShelf}: Props) {
