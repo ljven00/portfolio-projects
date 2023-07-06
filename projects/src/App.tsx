@@ -31,8 +31,8 @@ const projects: Data[] = [
     imgUrl: fruitShelf,
     title: "Fruits Shelf",
     preview: true,
-    previewUrl: "",
-    sourceCodeUrl: ""
+    previewUrl: "https://ljven-fruits-shelf.netlify.app/",
+    sourceCodeUrl: "https://github.com/ljven00/portfolio-projects/tree/main/fruits-shelves"
   }
 ]
 
